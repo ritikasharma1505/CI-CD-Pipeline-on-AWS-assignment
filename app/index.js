@@ -6,7 +6,7 @@ const port = 3000;
 app.use(express.json());
 
 // Configure AWS SDK for SSM
-const ssm = new AWS.SSM({ region: "us-east-1" });
+const ssm = new AWS.SSM({ region: "us-east-2" });
 let demoUser = null;
 
 // Fetch credentials from SSM Parameter Store
